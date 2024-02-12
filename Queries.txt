@@ -1,0 +1,30 @@
+A. Obtener el número de personas que han consultado itinerarios con un
+valor mayor a mil dólares.
+
+SELECT COUNT(*) AS numPersonas
+FROM Itinerario
+WHERE precioItinerario > 1000;
+
+B. Identificar a las personas mayores de 40 años que viven en la ciudad de
+Bogotá y han realizado reservas.
+
+SELECT c.nombre, c.apellido, c.correoElectronico
+FROM Cliente a
+INNER JOIN Reserva b ON b.idCliente = a.idCliente
+WHERE YEAR(fechaNacimiento) < YEAR(GETDATE()) - 40 AND b.ciudad = 'Bogotá' AND b.estadoReserva != 'Cancelada';
+
+C. Listar las reservas que se realizaron con pago mediante tarjeta de crédito.
+SELECT a.idReserva, a.fechaInicio, a.fechaFin, a.precioTotal, b.metodoPago
+FROM Reserva a
+INNER JOIN Pago b ON b.idReserva = a.idReserva
+WHERE b.metodoPago = 'TarjetaCredito';
+
+D. Listar las reservas que se hicieron con pago en destino.
+SELECT idReserva, fechaInicio, fechaFin, precioTotal, tipoPago
+FROM Reserva 
+WHERE metodoPago = 'Destino';
+
+E. Mostrar las reservas activas y canceladas.
+SELECT idReserva, fechaInicio, fechaFin, precioTotal
+FROM Reserva 
+WHERE estadoReserva IN ('Activa','Cancelada');
