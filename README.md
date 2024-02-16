@@ -1,3 +1,26 @@
+# ASP.NET Core 8 WebApi Prueba & Swagger
+
+En este repositorio se encuentra contenido correspondiente a prueba con detalle a continuacion
+
+Contiene un controlles para Vehiculos y conocer su disponibilidad
+
+Los vehículos disponibles se deben retornar en base a los siguientes criterios:
+a. Localidad de Recogida: Los clientes podrán especificar la localidad
+desde donde desean recoger el vehículo. Esta información será
+fundamental para determinar la disponibilidad de vehículos en esa
+ubicación.
+b. Localidad de Devolución: Además de la localidad de recogida, los
+usuarios podrán indicar la localidad donde desean devolver el vehículo.
+Esto permitirá calcular la disponibilidad y opciones de devolución en
+función de la ubicación deseada.
+c. Carros Disponibles para este Mercado: El sistema tomará en cuenta
+tanto la localidad de recogida como la ubicación del cliente para definir
+el mercado correspondiente. En base a este mercado, se mostrarán
+únicamente los vehículos
+
+
+Adicionalmente se tiene respuestas de la 1ra Prueba
+
 Prueba técnica Desarrollador .Net
 
 Lee detenidamente el requerimiento, donde se evaluarán los conceptos técnicos a
