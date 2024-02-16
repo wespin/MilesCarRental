@@ -1,0 +1,6 @@
+@BackEnd_HostAddress = http://localhost:5074
+
+GET {{BackEnd_HostAddress}}/Vehiculoes/
+Accept: application/json
+
+###
