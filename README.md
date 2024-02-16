@@ -18,6 +18,12 @@ tanto la localidad de recogida como la ubicación del cliente para definir
 el mercado correspondiente. En base a este mercado, se mostrarán
 únicamente los vehículos
 
+Esta Realizado en:
+
+c# + VStudio 2022 + NET 8.0
+En la Carpeta BackEnd -| Se encuentra la Solucion con la WebApi
+En la Carpeta BackTest -| Se  encuentra el proyecto de Test
+
 
 Adicionalmente se tiene respuestas de la 1ra Prueba
 
